@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Portfolio | Pratik Malani</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -927,6 +927,429 @@
 
         #topBtn:hover {
             background: #0f172a;
+        }
+
+        /* ==========================
+   MOBILE RESPONSIVE FIX
+========================== */
+
+        @media(max-width:900px) {
+
+            body {
+                overflow-x: hidden;
+            }
+
+            /* Navbar */
+            nav {
+                padding: 15px 20px;
+            }
+
+            .logo {
+                font-size: 22px;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+
+            /* Hero Section */
+
+            .hero {
+
+                min-height: 100vh;
+                height: auto;
+
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                padding: 120px 20px 50px;
+
+                text-align: center;
+            }
+
+
+            .hero-text {
+
+                width: 100%;
+            }
+
+
+            .hero-tag {
+
+                display: inline-block;
+                background: #dbeafe;
+                color: #2563eb;
+
+                padding: 8px 18px;
+                border-radius: 30px;
+
+                font-size: 13px;
+                font-weight: 600;
+
+                margin-bottom: 20px;
+            }
+
+
+            .hero-text h1 {
+
+                font-size: 38px;
+                line-height: 1.3;
+            }
+
+
+            .hero-text h2 {
+
+                font-size: 24px;
+                margin-top: 15px;
+            }
+
+
+            .hero-text p {
+
+                font-size: 15px;
+                line-height: 26px;
+                margin: 20px 0;
+            }
+
+
+            .hero-buttons {
+
+                display: flex;
+                flex-direction: column;
+
+                gap: 15px;
+
+                align-items: center;
+            }
+
+
+            .btn {
+
+                width: 220px;
+                text-align: center;
+            }
+
+
+            .social {
+
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+
+                gap: 10px;
+            }
+
+
+            .social a {
+
+                margin: 0;
+                padding: 10px 18px;
+
+            }
+
+
+            /* Profile Image */
+
+            .hero-img {
+
+                margin-top: 40px;
+            }
+
+
+            .hero-img img {
+
+                width: 260px;
+                height: 260px;
+
+                border-radius: 50%;
+
+                border-width: 6px;
+            }
+
+
+
+            /* About */
+
+            .about {
+
+                padding: 70px 20px;
+            }
+
+
+            .about-container {
+
+                grid-template-columns: 1fr;
+                gap: 30px;
+
+                text-align: center;
+            }
+
+
+            .about-left h2 {
+
+                font-size: 32px;
+            }
+
+
+            .about-left p {
+
+                font-size: 15px;
+                line-height: 28px;
+            }
+
+
+            .about-right {
+
+                grid-template-columns: 1fr 1fr;
+            }
+
+
+            .about-card {
+
+                padding: 25px 10px;
+            }
+
+
+            .about-card h3 {
+
+                font-size: 30px;
+            }
+
+
+
+            /* Sections */
+
+            .projects,
+            .skills,
+            .experience,
+            .education,
+            .achievement,
+            .contact {
+
+                padding: 70px 20px;
+
+            }
+
+
+
+            .section-title h2 {
+
+                font-size: 32px;
+            }
+
+
+
+            /* Projects */
+
+            .projects-container {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .project-content {
+
+                padding: 25px;
+            }
+
+
+
+
+            /* Skills */
+
+            .skills-container {
+
+                grid-template-columns: 1fr;
+            }
+
+
+
+            .skill-card {
+
+                padding: 25px;
+            }
+
+
+
+            /* Experience */
+
+            .timeline::before {
+
+                left: 25px;
+
+            }
+
+
+            .timeline-item {
+
+                flex-direction: row;
+            }
+
+
+            .timeline-icon {
+
+                width: 50px;
+                height: 50px;
+
+                font-size: 20px;
+
+            }
+
+
+            .timeline-content {
+
+                margin-left: 15px;
+                padding: 20px;
+
+            }
+
+
+            .timeline-content h3 {
+
+                font-size: 20px;
+            }
+
+
+            .timeline-content li {
+
+                font-size: 14px;
+                line-height: 24px;
+            }
+
+
+
+
+            /* Education */
+
+            .education-container {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .education-card {
+
+                padding: 25px;
+            }
+
+
+
+
+            /* Achievements */
+
+            .achievement-container {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+
+
+            /* Contact */
+
+            .contact-container {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .contact-card {
+
+                padding: 15px;
+
+            }
+
+
+            .contact-card p {
+
+                font-size: 14px;
+
+            }
+
+
+            .social-links {
+
+                text-align: center;
+            }
+
+
+
+            /* Footer */
+
+            footer h3 {
+
+                font-size: 22px;
+
+            }
+
+
+        }
+
+
+
+
+        /* Small Mobile Devices */
+
+        @media(max-width:480px) {
+
+
+            .hero-text h1 {
+
+                font-size: 32px;
+
+            }
+
+
+            .hero-text h2 {
+
+                font-size: 21px;
+
+            }
+
+
+            .hero-img img {
+
+                width: 220px;
+                height: 220px;
+
+            }
+
+
+            .about-right {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .project-content h3 {
+
+                font-size: 20px;
+
+            }
+
+
+            .skill-tags span {
+
+                font-size: 12px;
+                padding: 8px 12px;
+
+            }
+
+
+            .timeline-content {
+
+                padding: 15px;
+
+            }
+
+
         }
     </style>
 
